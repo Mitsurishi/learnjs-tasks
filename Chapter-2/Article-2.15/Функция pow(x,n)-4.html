@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article-2.15. Task-4</title>
+</head>
+
+<body>
+    <script>
+        function pow(x, n) {
+            let powX = x;
+            for (i = 1; i < n; i++) {
+                powX *= x;
+            }
+            return powX;
+        }
+
+        let x = prompt('Введите число');
+        let n = prompt('Введите степень');
+
+        if (!Number.isInteger(n) || n < 1) {
+            alert('Введите целое число больше 1');
+        } else {
+            alert(pow(x, n));
+        }
+    </script>
+</body>
+
+</html>
